@@ -1,6 +1,6 @@
-/* ----------------------- */
-/* RESET */
-/* ----------------------- */
+/* ------------------------------------ */
+/* RESET STYLES */
+/* ------------------------------------ */
 
 * {
 	margin: 0;
@@ -8,9 +8,9 @@
 	box-sizing: border-box;
 }
 
-/* ----------------------- */
+/* ------------------------------------ */
 /* GENERAL */
-/* ----------------------- */
+/* ------------------------------------ */
 
 :root {
 	color-scheme: light;
@@ -18,6 +18,7 @@
 	--primary-color: #4886ac;
 	--primary-light: #64a1c7;
 	--primary-dark: #407697;
+
 	--gray-dark: #0d1318;
 	--gray-medium: #18222b;
 	--gray-light: #e3e3e3;
@@ -33,6 +34,7 @@
 
 body {
 	font-family: Poppins, sans-serif;
+	color: var(--text-dark-light);
 }
 
 .container {
@@ -41,9 +43,9 @@ body {
 	padding: 0 2rem;
 }
 
-/* ----------------------- */
+/* ------------------------------------ */
 /* HEADER */
-/* ----------------------- */
+/* ------------------------------------ */
 
 .header {
 	width: 100%;
@@ -59,6 +61,8 @@ body {
 	line-height: 0;
 }
 
+/* Logo */
+
 .navbar__logo-container {
 	flex: 1;
 }
@@ -72,7 +76,7 @@ body {
 	transform: scale(1.08);
 }
 
-/* RESPONSIVE MENU BUTTON */
+/* Responsive menu button*/
 
 .navbar__btn-toggle {
 	display: none;
@@ -127,7 +131,7 @@ body {
 	transform: rotate(-135deg);
 }
 
-/* MENU LINKS */
+/* Menu links */
 
 .navbar__nav {
 	display: flex;
@@ -143,19 +147,26 @@ body {
 	font-weight: 500;
 	line-height: 1;
 	text-decoration: none;
-	color: var(--text-dark-light);
+	color: inherit;
 	transition: color 0.2s;
 }
 
 .navbar__link:hover,
 .navbar__link:active {
-	color: #4886ac;
+	color: var(--primary-light);
 }
 
 .navbar__link--active:link,
 .navbar__link--active:visited {
-	color: #4886ac;
+	color: var(--primary-color);
 }
+
+.navbar__link--active:hover,
+.navbar__link--active:active {
+	color: var(--primary-light);
+}
+
+/* Dark-Light mode button */
 
 .navbar__darklight {
 	cursor: pointer;
@@ -174,9 +185,9 @@ body {
 	color: var(--primary-color);
 }
 
-/* ----------------------- */
+/* ------------------------------------ */
 /* MEDIA QUERIES */
-/* ----------------------- */
+/* ------------------------------------ */
 
 @media only screen and (max-width: 900px) {
 	.container {
@@ -189,12 +200,11 @@ body {
 
 	.navbar {
 		flex-wrap: wrap;
-		gap: 0;
 	}
 
 	.navbar__logo {
 		flex-wrap: 1;
-		height: 2.8rem;
+		height: 2.4rem;
 	}
 
 	.navbar__btn-toggle {
