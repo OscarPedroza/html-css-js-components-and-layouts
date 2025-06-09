@@ -17,7 +17,17 @@
 		<link rel="stylesheet" href="styles.css" />
 
 		<!-- Scripts -->
-		<script src="js/script.js" defer></script>
+		<script src="script.js" defer></script>
+
+		<!-- IONICICONS -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+			defer></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+			defer></script>
 
 		<title>Navbar</title>
 	</head>
@@ -27,9 +37,11 @@
 		<header class="header">
 			<div class="container">
 				<nav class="navbar">
-					<a href="#">
-						<img src="img/logo.webp" alt="Logo" class="navbar__logo" />
-					</a>
+					<div class="navbar__logo-container">
+						<a href="#">
+							<img src="img/logo.webp" alt="Logo" class="navbar__logo" />
+						</a>
+					</div>
 
 					<button class="navbar__btn-toggle">
 						<span class="navbar__toggle-icon"></span>
@@ -58,6 +70,10 @@
 							</li>
 						</ul>
 					</div>
+
+					<button class="navbar__darklight" id="btn-mode-toggle">
+						<ion-icon name="contrast-outline" class="navbar__dark-light-icon"></ion-icon>
+					</button>
 				</nav>
 			</div>
 		</header>
