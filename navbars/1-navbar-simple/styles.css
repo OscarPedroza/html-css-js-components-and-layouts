@@ -76,61 +76,6 @@ body {
   transform: scale(1.08);
 }
 
-/* Responsive menu button*/
-
-.navbar__btn-toggle {
-  display: none;
-  align-items: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.navbar__toggle-icon {
-  position: relative;
-}
-
-.navbar__toggle-icon,
-.navbar__toggle-icon::before,
-.navbar__toggle-icon::after {
-  display: inline-block;
-  width: 1.7rem;
-  height: 2px;
-  background-color: var(--text-dark-light);
-  transition: all 0.3s;
-}
-
-.navbar__toggle-icon::before,
-.navbar__toggle-icon::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.navbar__toggle-icon::before {
-  top: -0.6rem;
-}
-
-.navbar__toggle-icon::after {
-  top: 0.6rem;
-}
-
-.navbar__btn-toggle.active .navbar__toggle-icon {
-  background-color: transparent;
-}
-
-.navbar__btn-toggle.active .navbar__toggle-icon::before {
-  top: 0;
-  transform: rotate(135deg);
-}
-
-.navbar__btn-toggle.active .navbar__toggle-icon::after {
-  top: 0;
-  transform: rotate(-135deg);
-}
-
 /* Menu links */
 
 .navbar__nav {
@@ -185,6 +130,61 @@ body {
   color: var(--primary-color);
 }
 
+/* Responsive menu button*/
+
+.navbar__btn-toggle {
+  display: none;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar__toggle-icon {
+  position: relative;
+}
+
+.navbar__toggle-icon,
+.navbar__toggle-icon::before,
+.navbar__toggle-icon::after {
+  display: inline-block;
+  width: 1.7rem;
+  height: 2px;
+  background-color: var(--text-dark-light);
+  transition: all 0.3s;
+}
+
+.navbar__toggle-icon::before,
+.navbar__toggle-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.navbar__toggle-icon::before {
+  top: -0.6rem;
+}
+
+.navbar__toggle-icon::after {
+  top: 0.6rem;
+}
+
+.navbar__btn-toggle.active .navbar__toggle-icon {
+  background-color: transparent;
+}
+
+.navbar__btn-toggle.active .navbar__toggle-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navbar__btn-toggle.active .navbar__toggle-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 /* ------------------------------------ */
 /* MEDIA QUERIES */
 /* ------------------------------------ */
@@ -209,12 +209,11 @@ body {
 
   .navbar__btn-toggle {
     display: flex;
-    order: 1;
   }
 
   .navbar__menu {
     flex-basis: 100%;
-    order: 2;
+    order: 1;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s linear;
