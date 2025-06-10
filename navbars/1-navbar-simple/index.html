@@ -39,14 +39,14 @@
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <div class="navbar__logo-container">
+          <div class="navbar__logo-box">
             <a href="#">
               <img src="img/logo.webp" alt="Logo" class="navbar__logo" />
             </a>
           </div>
 
-          <div class="navbar__menu">
-            <ul class="navbar__nav">
+          <div class="navbar__menu" id="menu">
+            <ul class="navbar__list">
               <li class="navbar__item">
                 <a href="#" class="navbar__link navbar__link--active">Home</a>
               </li>
@@ -69,15 +69,15 @@
             </ul>
           </div>
 
-          <button class="navbar__darklight" id="btn-mode-toggle">
+          <button class="navbar__btn-mode" id="btn-mode">
             <ion-icon
               name="contrast-outline"
-              class="navbar__dark-light-icon"
+              class="navbar__mode-icon"
             ></ion-icon>
           </button>
 
-          <button class="navbar__btn-toggle" id="btn-menu">
-            <span class="navbar__toggle-icon"></span>
+          <button class="navbar__btn-menu" id="btn-menu">
+            <span class="navbar__menu-icon"></span>
           </button>
         </nav>
       </div>

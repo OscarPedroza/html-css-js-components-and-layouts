@@ -3,10 +3,10 @@
  */
 
 const btnMenu = document.getElementById('btn-menu');
-const navbarMenu = document.querySelector('.navbar__menu');
+const menu = document.getElementById('menu');
 
 btnMenu.addEventListener('click', () => {
-  navbarMenu.classList.toggle('active');
+  menu.classList.toggle('active');
   btnMenu.classList.toggle('active');
 });
 
@@ -15,11 +15,11 @@ btnMenu.addEventListener('click', () => {
  */
 
 const root = document.documentElement;
-const btnModeToggle = document.getElementById('btn-mode-toggle');
+const btnMode = document.getElementById('btn-mode');
 
 root.classList.toggle('dark-mode', localStorage.getItem('mode') === 'dark');
 
-btnModeToggle.addEventListener('click', () => {
+btnMode.addEventListener('click', () => {
   const isDark = root.classList.toggle('dark-mode');
   localStorage.setItem('mode', isDark ? 'dark' : 'light');
 });
