@@ -3,9 +3,9 @@
 /* ------------------------------------ */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* ------------------------------------ */
@@ -13,34 +13,34 @@
 /* ------------------------------------ */
 
 :root {
-	color-scheme: light;
+  color-scheme: light;
 
-	--primary-color: #4886ac;
-	--primary-light: #64a1c7;
-	--primary-dark: #407697;
+  --primary-color: #4886ac;
+  --primary-light: #64a1c7;
+  --primary-dark: #407697;
 
-	--gray-dark: #0d1318;
-	--gray-medium: #18222b;
-	--gray-light: #e3e3e3;
-	--white: #ffffff;
+  --gray-dark: #0d1318;
+  --gray-medium: #18222b;
+  --gray-light: #e3e3e3;
+  --white: #ffffff;
 
-	--bg-dark-light: light-dark(var(--white), var(--gray-dark));
-	--text-dark-light: light-dark(var(--gray-dark), var(--white));
+  --bg-dark-light: light-dark(var(--white), var(--gray-dark));
+  --text-dark-light: light-dark(var(--gray-dark), var(--white));
 }
 
 :root.dark-mode {
-	color-scheme: dark;
+  color-scheme: dark;
 }
 
 body {
-	font-family: Poppins, sans-serif;
-	color: var(--text-dark-light);
+  font-family: Poppins, sans-serif;
+  color: var(--text-dark-light);
 }
 
 .container {
-	max-width: 82rem;
-	margin: 0 auto;
-	padding: 0 2rem;
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 /* ------------------------------------ */
@@ -48,141 +48,141 @@ body {
 /* ------------------------------------ */
 
 .header {
-	width: 100%;
-	padding: 1.2rem 3rem;
-	background-color: var(--bg-dark-light);
-	box-shadow: -1px 2px 20px 0px rgba(64, 118, 151, 0.15);
+  width: 100%;
+  padding: 1.2rem 3rem;
+  background-color: var(--bg-dark-light);
+  box-shadow: -1px 2px 20px 0px rgba(64, 118, 151, 0.15);
 }
 
 .navbar {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0;
 }
 
 /* Logo */
 
 .navbar__logo-container {
-	flex: 1;
+  flex: 1;
 }
 
 .navbar__logo {
-	height: 2.7rem;
-	transition: transform 0.3s;
+  height: 2.7rem;
+  transition: transform 0.3s;
 }
 
 .navbar__logo:hover {
-	transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 /* Responsive menu button*/
 
 .navbar__btn-toggle {
-	display: none;
-	align-items: center;
-	width: 1.7rem;
-	height: 1.7rem;
-	background-color: transparent;
-	border: none;
-	cursor: pointer;
+  display: none;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .navbar__toggle-icon {
-	position: relative;
+  position: relative;
 }
 
 .navbar__toggle-icon,
 .navbar__toggle-icon::before,
 .navbar__toggle-icon::after {
-	display: inline-block;
-	width: 1.7rem;
-	height: 2px;
-	background-color: var(--text-dark-light);
-	transition: all 0.3s;
+  display: inline-block;
+  width: 1.7rem;
+  height: 2px;
+  background-color: var(--text-dark-light);
+  transition: all 0.3s;
 }
 
 .navbar__toggle-icon::before,
 .navbar__toggle-icon::after {
-	content: '';
-	position: absolute;
-	left: 0;
+  content: "";
+  position: absolute;
+  left: 0;
 }
 
 .navbar__toggle-icon::before {
-	top: -0.6rem;
+  top: -0.6rem;
 }
 
 .navbar__toggle-icon::after {
-	top: 0.6rem;
+  top: 0.6rem;
 }
 
 .navbar__btn-toggle.active .navbar__toggle-icon {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .navbar__btn-toggle.active .navbar__toggle-icon::before {
-	top: 0;
-	transform: rotate(135deg);
+  top: 0;
+  transform: rotate(135deg);
 }
 
 .navbar__btn-toggle.active .navbar__toggle-icon::after {
-	top: 0;
-	transform: rotate(-135deg);
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 /* Menu links */
 
 .navbar__nav {
-	display: flex;
-	align-items: center;
-	list-style: none;
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 .navbar__link:link,
 .navbar__link:visited {
-	position: relative;
-	display: inline-block;
-	padding: 1rem 0.8rem;
-	font-weight: 500;
-	line-height: 1;
-	text-decoration: none;
-	color: inherit;
-	transition: color 0.2s;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
 }
 
 .navbar__link:hover,
 .navbar__link:active {
-	color: var(--primary-light);
+  color: var(--primary-light);
 }
 
 .navbar__link--active:link,
 .navbar__link--active:visited {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .navbar__link--active:hover,
 .navbar__link--active:active {
-	color: var(--primary-light);
+  color: var(--primary-light);
 }
 
 /* Dark-Light mode button */
 
 .navbar__darklight {
-	cursor: pointer;
-	background: none;
-	border: none;
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .navbar__dark-light-icon {
-	padding: 0.4rem 0.6rem;
-	font-size: 1.3rem;
-	color: var(--text-dark-light);
-	transition: color 0.3s;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.3rem;
+  color: var(--text-dark-light);
+  transition: color 0.3s;
 }
 
 .navbar__dark-light-icon:hover {
-	color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 /* ------------------------------------ */
@@ -190,56 +190,56 @@ body {
 /* ------------------------------------ */
 
 @media only screen and (max-width: 900px) {
-	.container {
-		padding: 0;
-	}
+  .container {
+    padding: 0;
+  }
 
-	.header {
-		padding: 1.2rem 1.5rem;
-	}
+  .header {
+    padding: 1.2rem 1.5rem;
+  }
 
-	.navbar {
-		flex-wrap: wrap;
-	}
+  .navbar {
+    flex-wrap: wrap;
+  }
 
-	.navbar__logo {
-		flex-wrap: 1;
-		height: 2.4rem;
-	}
+  .navbar__logo {
+    flex-wrap: 1;
+    height: 2.4rem;
+  }
 
-	.navbar__btn-toggle {
-		display: flex;
-		order: 1;
-	}
+  .navbar__btn-toggle {
+    display: flex;
+    order: 1;
+  }
 
-	.navbar__menu {
-		flex-basis: 100%;
-		order: 2;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.3s linear;
-	}
+  .navbar__menu {
+    flex-basis: 100%;
+    order: 2;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+  }
 
-	.navbar__menu.active {
-		max-height: 62rem;
-	}
+  .navbar__menu.active {
+    max-height: 62rem;
+  }
 
-	.navbar__nav {
-		padding: 1rem 0;
-		flex-direction: column;
-	}
+  .navbar__nav {
+    padding: 1rem 0;
+    flex-direction: column;
+  }
 
-	.navbar__link {
-		padding: 0;
-	}
+  .navbar__link {
+    padding: 0;
+  }
 
-	.navbar__darklight {
-		margin-top: 2px;
-		margin-right: 5px;
-	}
+  .navbar__darklight {
+    margin-top: 2px;
+    margin-right: 5px;
+  }
 
-	.navbar__dark-light-icon {
-		font-size: 1.6rem;
-		line-height: 0;
-	}
+  .navbar__dark-light-icon {
+    font-size: 1.6rem;
+    line-height: 0;
+  }
 }
