@@ -1,5 +1,5 @@
 /*
-Component: Navbar simple
+Component: Navbar with call to action
 Author: Oscar Pedroza
 Source: 
 */
@@ -47,6 +47,30 @@ img {
 }
 
 /* ------------------------------------ */
+/* COMPONENTS */
+/* ------------------------------------ */
+
+/* Buttons */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 1.3rem;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn--primary {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.btn--primary :hover {
+  background-color: var(--primary-dark);
+}
+
+/* ------------------------------------ */
 /* HEADER */
 /* ------------------------------------ */
 
@@ -82,6 +106,10 @@ img {
   margin-left: auto;
   align-items: center;
   list-style: none;
+}
+
+.menu__item:last-child {
+  margin-left: 1rem;
 }
 
 .menu__link:link,
@@ -216,7 +244,8 @@ img {
   }
 
   .menu__item:last-child {
-    padding-bottom: 1rem;
+    margin-left: 0;
+    padding: 1rem 0;
   }
 
   .menu__link {
