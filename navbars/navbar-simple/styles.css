@@ -1,11 +1,10 @@
 /*
-Component: Navbar simple
-Author: Oscar Pedroza
-Source: 
+* Component: Navbar simple
+* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-simple
 */
 
 /* ------------------------------------ */
-/* GENERAL */
+/* GENERAL AND RESET */
 /* ------------------------------------ */
 
 :root {
@@ -20,11 +19,23 @@ Source:
 }
 
 *,
-::before,
-::after {
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
 }
 
 body {
@@ -34,10 +45,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 .container {
