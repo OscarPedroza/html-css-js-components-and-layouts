@@ -1,6 +1,6 @@
 /*
-* Component: Navbar with call to action button
-* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-cta
+* Component: Navbar with login buttons
+* Source: 
 */
 
 /* ------------------------------------ */
@@ -81,6 +81,18 @@ a {
   border-color: var(--primary-dark);
 }
 
+.btn--secundary:link,
+.btn--secundary:visited {
+  color: var(--primary-dark);
+}
+
+.btn--secundary:hover,
+.btn--secundary:active {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--gray-light);
+}
+
 /* ------------------------------------ */
 /* HEADER */
 /* ------------------------------------ */
@@ -120,7 +132,7 @@ a {
 }
 
 .menu__item:last-child {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .menu__link:link,
@@ -146,6 +158,25 @@ a {
 .menu__link:active,
 .menu__link--active:active {
   color: var(--primary-dark);
+}
+
+/* Login buttons*/
+
+.navbar__buttons {
+  display: none;
+  gap: 0.7rem;
+}
+
+.menu__btn-login {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.menu__icon-login {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: var(--gray-medium);
 }
 
 /* Responsive menu button*/
@@ -255,8 +286,7 @@ a {
   }
 
   .menu__item:last-child {
-    margin-left: 0;
-    padding: 1rem 0;
+    margin-right: 0;
   }
 
   .menu__link {
