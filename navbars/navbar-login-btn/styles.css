@@ -54,7 +54,7 @@ a {
 }
 
 /* ------------------------------------ */
-/* COMPONENTS */
+/* REUSABLE STYLES */
 /* ------------------------------------ */
 
 /* Buttons */
@@ -163,19 +163,19 @@ a {
 /* Login buttons*/
 
 .navbar__buttons {
-  display: none;
+  display: flex;
   gap: 0.7rem;
 }
 
 .menu__btn-login {
+  display: none;
   cursor: pointer;
   background: none;
   border: none;
 }
 
 .menu__icon-login {
-  margin-right: 1rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--gray-medium);
 }
 
@@ -238,7 +238,7 @@ a {
 /* MEDIA QUERIES */
 /* ------------------------------------ */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1012px) {
   /*-------- General --------*/
 
   .container {
@@ -297,5 +297,32 @@ a {
 
   .menu__btn {
     display: flex;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  /*-------- Header --------*/
+
+  /* Login buttons*/
+  .navbar__buttons {
+    flex-basis: 100%;
+    order: 1;
+    justify-content: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar__buttons.active {
+    max-height: 6rem;
+  }
+
+  .navbar__buttons .btn {
+    margin: 1rem 0;
+  }
+
+  .menu__btn-login {
+    display: block;
   }
 }
