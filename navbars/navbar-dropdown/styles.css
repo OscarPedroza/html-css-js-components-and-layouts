@@ -1,0 +1,238 @@
+/*
+* Component: Navbar simple
+* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-simple
+*/
+
+/* ------------------------------------ */
+/* GENERAL AND RESET */
+/* ------------------------------------ */
+
+:root {
+  --primary-color: #4886ac;
+  --primary-light: #64a1c7;
+  --primary-dark: #407697;
+
+  --gray-dark: #0e1318;
+  --gray-medium: #18222b;
+  --gray-light: #e3e3e3;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--gray-medium);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ------------------------------------ */
+/* REUSABLE STYLES */
+/* ------------------------------------ */
+
+.header {
+  width: 100%;
+  padding: 1.2rem 3rem;
+  background-color: var(--white);
+  box-shadow: -1px 2px 20px 0px rgba(64, 111, 141, 0.15);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 0;
+}
+
+/* Logo */
+
+.menu__logo {
+  height: 2.7rem;
+  transition: transform 0.3s;
+}
+
+.menu__logo:hover {
+  transform: scale(1.08);
+}
+
+/* Menu links */
+
+.menu__list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  list-style: none;
+}
+
+.menu__link:link,
+.menu__link:visited {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0.8rem;
+  font-weight: 500;
+  line-height: 1;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+.menu__link--active:link,
+.menu__link--active:visited {
+  color: var(--primary-color);
+}
+
+.menu__link:hover,
+.menu__link--active:hover {
+  color: var(--primary-light);
+}
+.menu__link:active,
+.menu__link--active:active {
+  color: var(--primary-dark);
+}
+
+/* Responsive menu button*/
+
+.menu__btn {
+  display: none;
+  align-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__icon {
+  position: relative;
+}
+
+.menu__icon,
+.menu__icon::before,
+.menu__icon::after {
+  display: inline-block;
+  width: 1.7rem;
+  height: 2px;
+  background-color: var(--gray-medium);
+  transition: all 0.3s;
+}
+
+.menu__icon::before,
+.menu__icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menu__icon::before {
+  top: -0.6rem;
+}
+
+.menu__icon::after {
+  top: 0.6rem;
+}
+
+.menu__btn.active .menu__icon {
+  background-color: transparent;
+}
+
+.menu__btn.active .menu__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.menu__btn.active .menu__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+/* ------------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 900px) {
+  /*-------- General --------*/
+
+  .container {
+    padding: 0;
+  }
+
+  /*-------- Header --------*/
+
+  .header {
+    padding: 1.2rem 1.5rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  /* Logo */
+
+  .menu__logo-box {
+    flex: 1;
+  }
+
+  .menu__logo {
+    height: 2.4rem;
+  }
+
+  /* Menu links */
+
+  .menu__list {
+    flex-direction: column;
+    flex-basis: 100%;
+    order: 1;
+    max-height: 0;
+    /* padding: 1rem 0; */
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+  }
+
+  .menu__list.active {
+    max-height: 62rem;
+  }
+
+  .menu__item:first-child {
+    padding-top: 1rem;
+  }
+
+  .menu__item:last-child {
+    padding-bottom: 1rem;
+  }
+
+  .menu__link {
+    padding: 0;
+  }
+
+  /* Responsive menu button*/
+
+  .menu__btn {
+    display: flex;
+  }
+}
