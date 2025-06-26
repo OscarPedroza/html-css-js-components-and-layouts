@@ -1,6 +1,6 @@
 /*
 * Component: Navbar simple
-* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-simple
+* Source: 
 */
 
 /* ------------------------------------ */
@@ -91,6 +91,10 @@ a {
   list-style: none;
 }
 
+.menu__item {
+  position: relative;
+}
+
 .menu__link:link,
 .menu__link:visited {
   position: relative;
@@ -114,6 +118,44 @@ a {
 .menu__link:active,
 .menu__link--active:active {
   color: var(--primary-dark);
+}
+
+/* Dropdown menu */
+
+.menu__link--dropdown:link,
+.menu__link--dropdown:visited {
+  display: flex;
+  gap: 5px;
+}
+
+.menu__dropdown {
+  position: absolute;
+  top: 150%;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  background: var(--white);
+  border: 1px solid var(--gray-light);
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px rgba(64, 111, 141, 0.15);
+  transform: translateX(-1rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.menu__item:hover .menu__dropdown {
+  top: 105%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown-icon {
+  transition: transform 0.3s;
+}
+
+.menu__item:hover .dropdown-icon {
+  transform: rotate(180deg);
 }
 
 /* Responsive menu button*/
