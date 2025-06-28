@@ -226,10 +226,6 @@ a {
     padding-bottom: 1rem;
   }
 
-  .menu__link {
-    padding: 0;
-  }
-
   /* Responsive menu button*/
 
   .menu__btn {
