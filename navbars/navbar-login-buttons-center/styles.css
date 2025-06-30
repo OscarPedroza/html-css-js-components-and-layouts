@@ -1,6 +1,6 @@
 /*
 * Component: Navbar with login buttons
-* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons
+* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons-center
 */
 
 /* ------------------------------------ */
@@ -123,7 +123,6 @@ a {
 
 .menu__list {
   display: flex;
-  margin-left: auto;
   align-items: center;
   list-style: none;
 }
