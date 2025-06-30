@@ -286,7 +286,6 @@ a {
   .menu__link:link,
   .menu__link:visited {
     padding: 1rem 0;
-    width: 100%;
     border-bottom: 1px solid var(--gray-light);
   }
 

@@ -96,6 +96,7 @@ a {
 .menu__link:visited {
   position: relative;
   display: inline-block;
+  width: 100%;
   padding: 1rem 0.8rem;
   font-weight: 500;
   line-height: 1;
@@ -129,7 +130,7 @@ a {
   position: absolute;
   top: 150%;
   width: max-content;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
   list-style: none;
   background: var(--white);
   border: 1px solid var(--gray-light);
@@ -140,7 +141,12 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-.menu__item:hover .menu__submenu {
+.menu__subitem .menu__link:link,
+.menu__subitem .menu__link:visited {
+  padding: 1rem 1.5rem;
+}
+
+.menu__item-dropdown:hover > .menu__submenu {
   top: 105%;
   visibility: visible;
   opacity: 1;
@@ -268,7 +274,6 @@ a {
   .menu__link:link,
   .menu__link:visited {
     padding: 1rem 0;
-    width: 100%;
     border-bottom: 1px solid var(--gray-light);
   }
 
@@ -288,6 +293,11 @@ a {
 
   .menu__submenu.active {
     max-height: 50rem;
+  }
+
+  .menu__subitem .menu__link:link,
+  .menu__subitem .menu__link:visited {
+    padding: 1rem 0;
   }
 
   .dropdown-icon {
