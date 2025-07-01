@@ -1,14 +1,24 @@
 # UI CSS repository
 
-Este repositorio es una colección de plantillas y componentes de interfaz de usuario (UI) creados con CSS puro, diseñados para ahorrarte tiempo y esfuerzo en tus proyectos web. Ofreciendo la libertad de personalizar los estilos para que puedas adaptarlos a tus necesidades y preferencias.
+Este repositorio es una colección de componentes y plantillas de interfaz de usuario (UI) creados con HTML, CSS y JavaScript puro, diseñados para ahorrar tiempo y esfuerzo en proyectos web. Ofreciendo la libertad de personalizar los estilos para que puedan ser adaptados a las necesidades y preferencias.
 
-## Reglas de diseño para el proyecto
+## Componentes
+
+- [Navbars](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars)
+  - [Navbar simple](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-simple)
+  - [Navbar botón call to action](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-cta)
+  - [Navbar botones de login]('https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons')
+  - [Navbar botones de login (centrado)](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons-center)
+  - [Navbar submenu dropdwon](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown)
+  - [Navbar submenu dropdwon (multinivel)](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown-extended)
+
+## Información del proyecto
 
 ### Tipografía:
 
--  Familia de fuente: Poppins
+- Familia de fuente: Poppins
 
--  Tamaño de fuente base: 16px (1rem)
+- Tamaño de fuente base: 16px (1rem)
 
 ### Paleteta de colores:
 
