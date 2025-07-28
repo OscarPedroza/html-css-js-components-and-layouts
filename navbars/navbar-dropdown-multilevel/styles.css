@@ -1,6 +1,6 @@
 /*
-* Component: Navbar dropdown
-* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown
+* Component: Navbar dropdown multilevel
+* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown-multilevel
 */
 
 /* ------------------------------------ */
@@ -27,7 +27,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+  font-family: inherit;
 }
 
 img {
