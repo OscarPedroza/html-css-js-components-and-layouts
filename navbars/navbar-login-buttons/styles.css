@@ -272,6 +272,12 @@ button.btn {
     flex: 1;
   }
 
+  .menu__logo-box a {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .menu__logo {
     height: 2.4rem;
   }
@@ -330,6 +336,6 @@ button.btn {
   }
 
   .menu__btn-login {
-    display: block;
+    display: flex;
   }
 }

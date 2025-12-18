@@ -190,8 +190,10 @@ a {
 
   /* Logo */
 
-  .menu__logo-box {
-    flex: 1;
+  .menu__logo-box a {
+    display: block;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .menu__logo {
