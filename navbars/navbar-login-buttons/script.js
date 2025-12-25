@@ -9,7 +9,7 @@ btnMenu.addEventListener('click', () => {
   menuList.classList.toggle('active');
   btnMenu.classList.toggle('active');
 
-  navbarButtons.classList.remove('active');
+  menuButtons.classList.remove('active');
 });
 
 /**
@@ -17,10 +17,10 @@ btnMenu.addEventListener('click', () => {
  */
 
 const btnLogin = document.getElementById('btn-login');
-const navbarButtons = document.getElementById('navbar-buttons');
+const menuButtons = document.getElementById('menu-buttons');
 
 btnLogin.addEventListener('click', () => {
-  navbarButtons.classList.toggle('active');
+  menuButtons.classList.toggle('active');
 
   menuList.classList.remove('active');
   btnMenu.classList.remove('active');
