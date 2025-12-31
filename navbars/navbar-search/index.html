@@ -67,13 +67,25 @@
             </li>
           </ul>
 
-          <div class="navbar__buttons" id="navbar-buttons">
-            <a href="#" class="btn btn--primary">Log in</a>
-            <a href="#" class="btn btn--secundary">Sign up</a>
+          <div class="navbar__search" id="navbar-search">
+            <input
+              type="text"
+              class="navbar__search-input"
+              placeholder="Search..."
+            />
+            <a href="#" class="navbar__search-btn btn--primary">
+              <ion-icon
+                name="search-outline"
+                class="navbar__search-btn-icon"
+              ></ion-icon>
+            </a>
           </div>
 
-          <button class="menu__btn-login" id="btn-login">
-            <ion-icon name="person-outline" class="menu__icon-login"></ion-icon>
+          <button class="menu__search-toggle" id="search-toggle">
+            <ion-icon
+              name="search-outline"
+              class="menu__icon-search"
+            ></ion-icon>
           </button>
 
           <button class="menu__btn" id="btn-menu">

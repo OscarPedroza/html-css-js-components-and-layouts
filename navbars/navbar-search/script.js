@@ -1,26 +1,26 @@
+const btnMenu = document.getElementById('btn-menu');
+const menuList = document.getElementById('menu-list');
+
+const searchToggle = document.getElementById('search-toggle');
+const navbarSearch = document.getElementById('navbar-search');
+
 /**
  * Responsive menu
  */
-
-const btnMenu = document.getElementById('btn-menu');
-const menuList = document.getElementById('menu-list');
 
 btnMenu.addEventListener('click', () => {
   menuList.classList.toggle('active');
   btnMenu.classList.toggle('active');
 
-  navbarButtons.classList.remove('active');
+  navbarSearch.classList.remove('active');
 });
 
 /**
- * Login toggle
+ * Search toggle
  */
 
-const btnLogin = document.getElementById('btn-login');
-const navbarButtons = document.getElementById('navbar-buttons');
-
-btnLogin.addEventListener('click', () => {
-  navbarButtons.classList.toggle('active');
+searchToggle.addEventListener('click', () => {
+  navbarSearch.classList.toggle('active');
 
   menuList.classList.remove('active');
   btnMenu.classList.remove('active');

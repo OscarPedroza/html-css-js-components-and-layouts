@@ -1,6 +1,6 @@
 /*
-* Component: Navbar with login buttons
-* Source: https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons
+* Component: Navbar with search box
+* Source: 
 */
 
 /* ------------------------------------ */
@@ -171,21 +171,56 @@ button.btn {
   color: var(--primary-dark);
 }
 
-/* Login buttons*/
+/* Search button */
 
-.navbar__buttons {
+.navbar__search {
+  position: relative;
   display: flex;
   gap: 0.7rem;
 }
 
-.menu__btn-login {
+.navbar__search-input {
+  padding: 0.5rem 0.8rem;
+  min-width: 15rem;
+  font-size: 1rem;
+  background-color: var(--white);
+  border: 2px solid var(--gray-light);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s, min-width 0.3s;
+}
+
+.navbar__search-input:focus {
+  border-color: var(--primary-light);
+  min-width: 17rem;
+}
+
+.navbar__search-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.navbar__search-btn-icon {
+  font-size: 1.2rem;
+}
+
+.menu__search-toggle {
   display: none;
   cursor: pointer;
   background: none;
   border: none;
 }
 
-.menu__icon-login {
+.menu__icon-search {
   font-size: 1.7rem;
   color: var(--gray-medium);
 }
@@ -317,8 +352,8 @@ button.btn {
 @media only screen and (max-width: 510px) {
   /*-------- Header --------*/
 
-  /* Login buttons*/
-  .navbar__buttons {
+  /* Search button */
+  .navbar__search {
     flex-basis: 100%;
     order: 1;
     justify-content: center;
@@ -327,15 +362,20 @@ button.btn {
     transition: max-height 0.3s ease;
   }
 
-  .navbar__buttons.active {
+  .navbar__search.active {
     max-height: 6rem;
   }
 
-  .navbar__buttons .btn {
+  .menu__search-toggle {
+    display: flex;
+  }
+
+  .navbar__search-input {
+    min-width: 100%;
     margin: 1rem 0;
   }
 
-  .menu__btn-login {
-    display: flex;
+  .navbar__search-input:focus {
+    min-width: 100%;
   }
 }
