@@ -11,6 +11,8 @@ Este repositorio es una colección de componentes y plantillas de interfaz de us
   - [Navbar botones de login (centrado)](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-login-buttons-center)
   - [Navbar submenu dropdwon](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown)
   - [Navbar submenu dropdwon (multinivel)](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-dropdown-multilevel)
+  - [Navbar barra de búsqueda](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-search)
+  - [Navbar barra de búsqueda (centrado)](https://github.com/OscarPedroza/html-css-js-components-and-layouts/tree/main/navbars/navbar-search-center)
 
 ## Información del proyecto
 

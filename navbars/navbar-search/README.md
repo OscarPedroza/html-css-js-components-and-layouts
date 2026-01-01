@@ -1,5 +1,5 @@
-# Navbar botones de login
+# Navbar barra de búsqueda
 
-[Abrir en el navegador](https://oscarpedroza.github.io/html-css-js-components-and-layouts/navbars/navbar-login-buttons/)
+[Abrir en el navegador](https://oscarpedroza.github.io/html-css-js-components-and-layouts/navbars/navbar-search/)
 
-![navbar-login-buttons-screen](img/navbar-login-buttons-screen.webp)
+![navbar-search-screen](img/navbar-search-screen.webp)
