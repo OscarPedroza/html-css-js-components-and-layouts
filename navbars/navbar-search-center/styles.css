@@ -137,7 +137,6 @@ button.btn {
 
 .menu__list {
   display: flex;
-  margin-left: auto;
   align-items: center;
   list-style: none;
 }
@@ -181,7 +180,7 @@ button.btn {
 
 .navbar__search-input {
   padding: 0.5rem 0.8rem;
-  min-width: 15rem;
+  min-width: 22rem;
   font-size: 1rem;
   background-color: var(--white);
   border: 2px solid var(--gray-light);
@@ -192,7 +191,7 @@ button.btn {
 
 .navbar__search-input:focus {
   border-color: var(--primary-light);
-  min-width: 17rem;
+  min-width: 24rem;
 }
 
 .navbar__search-btn {
@@ -317,6 +316,12 @@ button.btn {
 
   .menu__logo {
     height: 2.4rem;
+  }
+
+  /* Navbar search */
+
+  .navbar__search-input {
+    min-width: 15rem;
   }
 
   /* Menu links */
