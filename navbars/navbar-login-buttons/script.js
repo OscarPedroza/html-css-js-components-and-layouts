@@ -1,9 +1,12 @@
-/**
- * Responsive menu
- */
+const btnLogin = document.getElementById('btn-login');
+const menuButtons = document.getElementById('menu-buttons');
 
 const btnMenu = document.getElementById('btn-menu');
 const menuList = document.getElementById('menu-list');
+
+/**
+ * Responsive menu
+ */
 
 btnMenu.addEventListener('click', () => {
   menuList.classList.toggle('active');
@@ -15,9 +18,6 @@ btnMenu.addEventListener('click', () => {
 /**
  * Login toggle
  */
-
-const btnLogin = document.getElementById('btn-login');
-const menuButtons = document.getElementById('menu-buttons');
 
 btnLogin.addEventListener('click', () => {
   menuButtons.classList.toggle('active');
