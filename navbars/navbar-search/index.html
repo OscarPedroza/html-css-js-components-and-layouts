@@ -19,17 +19,8 @@
     <!-- SCRIPTS -->
     <script src="script.js" defer></script>
 
-    <!-- IONICICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      defer
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      defer
-    ></script>
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <title>Navbar Login Buttons</title>
   </head>
@@ -74,18 +65,12 @@
               placeholder="Search..."
             />
             <a href="#" class="navbar__search-btn btn--primary">
-              <ion-icon
-                name="search-outline"
-                class="navbar__search-btn-icon"
-              ></ion-icon>
+              <i data-lucide="search" class="navbar__search-btn-icon"></i>
             </a>
           </div>
 
           <button class="menu__search-toggle" id="search-toggle">
-            <ion-icon
-              name="search-outline"
-              class="menu__icon-search"
-            ></ion-icon>
+            <i data-lucide="search" class="menu__icon-search"></i>
           </button>
 
           <button class="menu__btn" id="btn-menu">
@@ -95,5 +80,8 @@
       </div>
     </header>
     <!-- HEADER ENDS -->
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

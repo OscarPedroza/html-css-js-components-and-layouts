@@ -19,17 +19,8 @@
     <!-- SCRIPTS -->
     <script src="script.js" defer></script>
 
-    <!-- IONICICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-      defer
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-      defer
-    ></script>
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <title>Navbar Dropdown</title>
   </head>
@@ -57,8 +48,7 @@
             <li class="menu__item menu__item-dropdown">
               <a href="#" class="menu__link menu__link--dropdown">
                 Services
-                <ion-icon name="chevron-down-outline" class="dropdown-icon">
-                </ion-icon>
+                <i data-lucide="chevron-down" class="dropdown-icon"></i>
               </a>
 
               <ul class="menu__submenu">
@@ -77,8 +67,7 @@
             <li class="menu__item menu__item-dropdown">
               <a href="#" class="menu__link menu__link--dropdown">
                 Products
-                <ion-icon name="chevron-down-outline" class="dropdown-icon">
-                </ion-icon>
+                <i data-lucide="chevron-down" class="dropdown-icon"></i>
               </a>
 
               <ul class="menu__submenu">
@@ -106,5 +95,8 @@
       </div>
     </header>
     <!-- HEADER ENDS -->
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

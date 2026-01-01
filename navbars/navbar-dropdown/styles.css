@@ -152,6 +152,8 @@ a {
 }
 
 .dropdown-icon {
+  width: 1em;
+  height: 1em;
   transition: transform 0.3s;
 }
 
@@ -307,7 +309,8 @@ a {
 
   .dropdown-icon {
     margin-left: auto;
-    font-size: 1.3rem;
+    width: 1.3rem;
+    height: 1.3rem;
   }
 
   .dropdown-icon.up {

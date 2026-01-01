@@ -186,7 +186,8 @@ button.btn {
 }
 
 .menu__icon-login {
-  font-size: 1.7rem;
+  width: 1.7rem;
+  height: 1.7rem;
   color: var(--gray-medium);
 }
 
