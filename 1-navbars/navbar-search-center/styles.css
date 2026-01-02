@@ -386,3 +386,9 @@ button.btn {
     min-width: 100%;
   }
 }
+
+@media only screen and (min-width: 90rem) {
+  .container {
+    padding: 0;
+  }
+}
