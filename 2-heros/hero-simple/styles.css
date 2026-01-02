@@ -98,7 +98,7 @@ button.btn {
 .hero {
   display: grid;
   place-items: center;
-  padding: 10rem 0;
+  padding: 8rem 0;
   text-align: center;
 }
 
@@ -119,3 +119,39 @@ button.btn {
   margin-bottom: 4rem;
   max-width: 60ch;
 }
+
+/* ------------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+
+  /* Hero */
+
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__description {
+    margin-bottom: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+}
+
