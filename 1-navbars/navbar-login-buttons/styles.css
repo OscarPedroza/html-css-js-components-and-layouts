@@ -93,13 +93,13 @@ button.btn {
   transform: scale(0.99);
 }
 
-.btn--secundary:link,
-.btn--secundary:visited {
+.btn--secondary:link,
+.btn--secondary:visited {
   color: var(--primary-dark);
 }
 
-.btn--secundary:hover,
-.btn--secundary:active {
+.btn--secondary:hover,
+.btn--secondary:active {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
   color: var(--gray-light);

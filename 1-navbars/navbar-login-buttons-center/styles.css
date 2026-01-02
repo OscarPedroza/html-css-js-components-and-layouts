@@ -88,18 +88,18 @@ button.btn {
 }
 
 .btn--primary:active,
-.btn--secundary:active {
+.btn--secondary:active {
   background-color: var(--primary-light);
   border-color: var(--primary-light);
   transform: scale(0.99);
 }
 
-.btn--secundary:link,
-.btn--secundary:visited {
+.btn--secondary:link,
+.btn--secondary:visited {
   color: var(--primary-dark);
 }
 
-.btn--secundary:hover {
+.btn--secondary:hover {
   background-color: var(--primary-dark);
   border-color: var(--primary-dark);
   color: var(--gray-light);

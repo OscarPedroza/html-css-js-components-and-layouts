@@ -91,6 +91,18 @@ button.btn {
   border-color: var(--primary-dark);
 }
 
+.btn--secondary:link,
+.btn--secondary:visited {
+  color: var(--primary-dark);
+}
+
+.btn--secondary:hover,
+.btn--secondary:active {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: var(--gray-light);
+}
+
 /* ------------------------------------ */
 /* HERO STYLES */
 /* ------------------------------------ */
