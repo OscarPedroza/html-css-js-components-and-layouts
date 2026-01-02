@@ -132,6 +132,11 @@ button.btn {
   max-width: 60ch;
 }
 
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+}
+
 /* ------------------------------------ */
 /* MEDIA QUERIES */
 /* ------------------------------------ */
