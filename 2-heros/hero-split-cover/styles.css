@@ -47,6 +47,7 @@ a {
   max-width: 82rem;
   margin: 0 auto;
   padding: 0 2rem;
+  background-color: crimson;
 }
 
 /* ------------------------------------ */
@@ -118,7 +119,7 @@ button.btn {
 
 .hero__content {
   align-self: center;
-  padding-left: max(2rem, calc((100vw - 82rem) / 2 + 2rem));
+  margin-left: max(2rem, calc((100vw - 82rem) / 2 + 2rem));
 }
 
 .hero__title {
@@ -163,6 +164,10 @@ button.btn {
     gap: 3rem;
     padding: 5rem 10rem;
   }
+
+  .hero__content {
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 880px) {
@@ -193,7 +198,7 @@ button.btn {
 }
 
 @media only screen and (min-width: 90rem) {
-  .hero__content {
-    padding-left: max(2rem, calc((100vw - 86rem) / 2));
+  .container {
+    padding: 0;
   }
 }
