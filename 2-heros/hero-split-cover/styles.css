@@ -201,4 +201,8 @@ button.btn {
   .container {
     padding: 0;
   }
+
+  .hero__content {
+    margin-left: max(2rem, calc((100vw - 82rem) / 2));
+  }
 }
