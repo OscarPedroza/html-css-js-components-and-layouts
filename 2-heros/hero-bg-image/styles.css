@@ -93,7 +93,7 @@ button.btn {
 
 .btn--secondary:link,
 .btn--secondary:visited {
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
 .btn--secondary:hover,
@@ -107,11 +107,23 @@ button.btn {
 /* HERO STYLES */
 /* ------------------------------------ */
 
+.hero-section {
+  background-image: linear-gradient(
+      rgba(11, 11, 32, 0.85),
+      rgba(11, 11, 32, 0.85)
+    ),
+    url('img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero {
   display: grid;
   place-items: center;
   padding: 8rem 0;
   text-align: center;
+  color: var(--white);
 }
 
 .hero__title {
