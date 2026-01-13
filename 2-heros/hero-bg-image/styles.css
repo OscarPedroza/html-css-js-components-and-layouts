@@ -108,6 +108,9 @@ button.btn {
 /* ------------------------------------ */
 
 .hero-section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
   background-image: linear-gradient(
       rgba(11, 11, 32, 0.85),
       rgba(11, 11, 32, 0.85)
@@ -121,7 +124,6 @@ button.btn {
 .hero {
   display: grid;
   place-items: center;
-  padding: 8rem 0;
   text-align: center;
   color: var(--white);
 }
