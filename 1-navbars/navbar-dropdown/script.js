@@ -26,3 +26,6 @@ dropdowns.forEach((dropdown) => {
     dropdownIcon.classList.toggle('up');
   });
 });
+
+// Initialize Lucide Icons
+lucide.createIcons();

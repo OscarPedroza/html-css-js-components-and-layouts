@@ -25,3 +25,6 @@ searchToggle.addEventListener('click', () => {
   menuList.classList.remove('active');
   btnMenu.classList.remove('active');
 });
+
+// Initialize Lucide Icons
+lucide.createIcons();

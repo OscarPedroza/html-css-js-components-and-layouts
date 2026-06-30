@@ -9,3 +9,7 @@ btnMenu.addEventListener('click', () => {
   menuList.classList.toggle('active');
   btnMenu.classList.toggle('active');
 });
+
+// Initialize Lucide Icons
+lucide.createIcons();
+
