@@ -34,7 +34,7 @@
   --fill-active: light-dark(var(--primary-light), var(--primary-color));
   --fill-text: var(--white);
 
-  --shadow-content: light-dark(var(--shadow-content), rgba(0, 0, 0, 0.3));
+  --shadow-content: light-dark(rgba(64, 111, 141, 0.15), rgba(0, 0, 0, 0.3));
 
   /* Smooth transition */
   --theme-transition:
@@ -164,6 +164,7 @@ button.btn {
 
 .menu__item:last-child {
   margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .menu__link:link,
@@ -276,8 +277,8 @@ button.btn {
 
 .icon-theme {
   display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.3rem;
+  height: 1.3rem;
   line-height: 0;
 }
 
@@ -358,12 +359,14 @@ button.btn {
   .menu__item:last-child {
     margin-left: 0;
     padding: 1rem 0;
+    margin-right: 0;
   }
 
   /* Responsive menu button*/
 
   .menu__btn {
     display: flex;
+    margin-left: 1rem;
   }
 }
 

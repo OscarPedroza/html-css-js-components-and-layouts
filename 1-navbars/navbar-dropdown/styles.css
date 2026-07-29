@@ -35,7 +35,7 @@
   --fill-active: light-dark(var(--primary-light), var(--primary-color));
   --fill-text: var(--white);
 
-  --shadow-content: light-dark(var(--shadow-content), rgba(0, 0, 0, 0.3));
+  --shadow-content: light-dark(rgba(64, 111, 141, 0.15), rgba(0, 0, 0, 0.3));
 
   /* Smooth transition */
   --theme-transition:
@@ -300,6 +300,10 @@ a {
 /* MEDIA QUERIES */
 /* ------------------------------------ */
 
+.menu__item:last-child {
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 900px) {
   /*-------- General --------*/
 
@@ -361,6 +365,7 @@ a {
 
   .menu__item:last-child {
     padding-bottom: 1rem;
+    margin-right: 0;
   }
 
   .menu__link:link,
@@ -406,6 +411,7 @@ a {
 
   .menu__btn {
     display: flex;
+    margin-left: 1rem;
   }
 }
 
