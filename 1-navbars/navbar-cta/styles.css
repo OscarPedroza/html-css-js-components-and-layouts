@@ -19,7 +19,6 @@
   --gray-light: #e3e3e3;
   --white: #ffffff;
 
-
   /* Dynamics variables */
   --bg-body: light-dark(var(--white), var(--gray-dark));
   --bg-content: light-dark(var(--white), var(--gray-medium));
@@ -30,7 +29,7 @@
   --action-hover: light-dark(var(--primary-dark), var(--primary-light));
   --action-active: light-dark(var(--primary-light), var(--primary-dark));
 
-  --fill-color: var(--action-color);
+  --fill-color: var(--primary-color);
   --fill-hover: var(--primary-dark);
   --fill-active: light-dark(var(--primary-light), var(--primary-color));
   --fill-text: var(--white);
@@ -45,7 +44,6 @@
 html.dark {
   color-scheme: dark;
 }
-
 
 *,
 *::before,
@@ -101,7 +99,9 @@ button.btn {
   line-height: 1;
   border-radius: 4px;
   border: 2px solid;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
   cursor: pointer;
 }
 
@@ -246,7 +246,6 @@ button.btn {
   transform: rotate(-135deg);
 }
 
-
 /* Light-Dark button */
 
 .btn-theme {
@@ -277,8 +276,8 @@ button.btn {
 
 .icon-theme {
   display: inline-block;
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.6rem;
+  height: 1.6rem;
   line-height: 0;
 }
 
@@ -314,7 +313,7 @@ button.btn {
   .header {
     padding: 1.2rem 1.5rem;
     transition: var(--theme-transition);
-}
+  }
 
   .menu {
     flex-wrap: wrap;

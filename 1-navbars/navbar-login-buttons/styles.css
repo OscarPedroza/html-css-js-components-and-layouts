@@ -30,7 +30,7 @@
   --action-hover: light-dark(var(--primary-dark), var(--primary-light));
   --action-active: light-dark(var(--primary-light), var(--primary-dark));
 
-  --fill-color: var(--action-color);
+  --fill-color: var(--primary-color);
   --fill-hover: var(--primary-dark);
   --fill-active: light-dark(var(--primary-light), var(--primary-color));
   --fill-text: var(--white);
