@@ -104,6 +104,10 @@ button.btn {
   cursor: pointer;
 }
 
+.btn:active {
+  transform: scale(0.99);
+}
+
 .btn--big:link,
 .btn--big:visited {
   padding: 1rem 2rem;
@@ -125,7 +129,6 @@ button.btn {
 .btn--primary:active {
   background-color: var(--action-hover);
   border-color: var(--action-hover);
-  transform: scale(0.99);
 }
 
 /* Dark-light theme button */
