@@ -118,13 +118,13 @@ button.btn {
 }
 
 .btn--primary:hover {
-  background-color: var(--action-hover);
-  border-color: var(--action-hover);
+  background-color: var(--action-active);
+  border-color: var(--action-active);
 }
 
 .btn--primary:active {
-  background-color: var(--action-active);
-  border-color: var(--action-active);
+  background-color: var(--action-hover);
+  border-color: var(--action-hover);
   transform: scale(0.99);
 }
 
