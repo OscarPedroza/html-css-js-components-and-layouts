@@ -1,0 +1,348 @@
+/*
+* Component: Hero with Background Image Parallax
+*/
+
+/* ------------------------------------ */
+/* GENERAL AND RESET */
+/* ------------------------------------ */
+
+:root {
+  color-scheme: light;
+
+  --primary-color: #4886ac;
+  --primary-light: #64a1c7;
+  --primary-dark: #407697;
+
+  --gray-dark: #0e1318;
+  --gray-medium: #18222b;
+  --gray-light: #e3e3e3;
+  --white: #ffffff;
+
+  /* Dynamics variables */
+  --bg-body: light-dark(var(--white), var(--gray-dark));
+  --bg-content: light-dark(var(--white), var(--gray-medium));
+
+  --text-main: light-dark(var(--gray-medium), var(--white));
+
+  --action-color: light-dark(var(--primary-color), var(--primary-light));
+  --action-hover: light-dark(var(--primary-dark), var(--primary-dark));
+  --action-active: light-dark(var(--primary-light), var(--primary-color));
+
+  --fill-color: var(--primary-color);
+  --fill-hover: var(--primary-dark);
+  --fill-active: light-dark(var(--primary-light), var(--primary-color));
+  --fill-text: var(--white);
+
+  /* Box shadow */
+
+  --shadow-content: light-dark(rgba(64, 111, 141, 0.15), rgba(0, 0, 0, 0.3));
+
+  --shadow-sm: 0px 1px 10px 0px var(--shadow-content);
+  --shadow-md: -1px 2px 20px 0px var(--shadow-content);
+  --shadow-lg: -2px 4px 30px 0px var(--shadow-content);
+  --shadow-xl: -2px 8px 40px 0px var(--shadow-content);
+
+  /* Smooth transition */
+  --theme-transition:
+    background-color 0.3s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  color: var(--text-main);
+  background-color: var(--bg-body);
+  transition: var(--theme-transition);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 82rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ------------------------------------ */
+/* REUSABLE STYLES */
+/* ------------------------------------ */
+
+/* Titles and Text */
+
+.h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.h2::after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 6px;
+  margin: 1rem 0 1rem;
+  background-color: var(--fill-color);
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+/* Buttons */
+
+button.btn {
+  border: none;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: 1;
+  border-radius: 4px;
+  border: 2px solid;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.btn--big:link,
+.btn--big:visited {
+  padding: 1rem 2rem;
+}
+
+.btn--primary,
+.btn--primary:link,
+.btn--primary:visited {
+  color: var(--white);
+  background-color: var(--action-color);
+  border-color: var(--action-color);
+}
+
+.btn--primary:hover {
+  background-color: var(--action-hover);
+  border-color: var(--action-hover);
+}
+
+.btn--primary:active {
+  background-color: var(--action-active);
+  border-color: var(--action-active);
+}
+
+.btn--secondary:link,
+.btn--secondary:visited {
+  color: var(--action-color);
+}
+
+.btn--secondary:hover {
+  background-color: var(--action-hover);
+  border-color: var(--action-hover);
+  color: var(--gray-light);
+}
+
+.btn--secondary:active {
+  background-color: var(--action-active);
+  border-color: var(--action-active);
+  color: var(--gray-light);
+}
+
+/* Dark-light theme button */
+
+.btn-theme {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--fill-color);
+  color: var(--fill-text);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.btn-theme:hover {
+  background-color: var(--fill-hover);
+  color: var(--fill-text);
+}
+
+.btn-theme:active {
+  background-color: var(--fill-active);
+  color: var(--fill-text);
+  transform: scale(0.95);
+}
+
+.icon-theme {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 0;
+}
+
+.icon-theme--sun {
+  display: none;
+}
+
+.dark .icon-theme--sun {
+  display: block;
+}
+
+.dark .icon-theme--moon {
+  display: none;
+}
+
+.dark .menu__logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* ------------------------------------ */
+/* HERO STYLES */
+/* ------------------------------------ */
+
+.hero-section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(rgba(11, 11, 32, 0.85), rgba(11, 11, 32, 0.85)),
+    url('img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero__title {
+  margin-bottom: 3rem;
+  font-size: 3.1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero__title-span {
+  display: block;
+  color: var(--action-color);
+}
+
+.hero__description {
+  margin-bottom: 4rem;
+  max-width: 60ch;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ------------------------------------ */
+/* MAIN SECTION STYLES */
+/* ------------------------------------ */
+
+.main {
+  padding: 3rem 0;
+}
+
+.section {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  background-color: var(--bg-content);
+  box-shadow: var(--shadow-md);
+}
+
+/* ------------------------------------ */
+/* MEDIA QUERIES */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+
+  .h2 {
+    font-size: 1.8rem;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  /* Hero */
+
+  .hero {
+    padding: 5rem 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__description {
+    margin-bottom: 2.25rem;
+  }
+
+  /* Section */
+
+  .section {
+    margin: 0 1rem;
+    padding: 1.5rem 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 505px) {
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .h2 {
+    font-size: 1.6rem;
+  }
+}
