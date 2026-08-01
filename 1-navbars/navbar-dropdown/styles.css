@@ -27,8 +27,8 @@
   --text-main: light-dark(var(--gray-medium), var(--white));
 
   --action-color: light-dark(var(--primary-color), var(--primary-light));
-  --action-hover: light-dark(var(--primary-dark), var(--primary-light));
-  --action-active: light-dark(var(--primary-light), var(--primary-dark));
+  --action-hover: light-dark(var(--primary-dark), var(--primary-dark));
+  --action-active: light-dark(var(--primary-light), var(--primary-color));
 
   --fill-color: var(--primary-color);
   --fill-hover: var(--primary-dark);
